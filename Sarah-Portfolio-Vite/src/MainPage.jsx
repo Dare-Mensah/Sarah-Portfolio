@@ -4,13 +4,13 @@ import React from 'react'
 //import "slick-carousel/slick/slick.css";
 //import "slick-carousel/slick/slick-theme.css";
 
-import Heroimg from "./assets/Profilepic.jpg"
+import Heroimg from "./assets/pprofile_img.jpeg"
 import linkinimg from "./assets/linkedinlogo.png"
 import githubimg from "./assets/github.jpg"
-import GTLogo from './assets/GTLogo.jpeg'
-import amazonLogo from './assets/Amazon-Logo-07.jpg'
-import microsoftLogo from './assets/microsoftLogo.png'
-import reality_ai_labs_logo from './assets/reality_ai_labs_logo.jpg'
+import TheOrdinary_logo from './assets/ordinary_logo.jpg'
+import JohnLewis_Logo from './assets/johnlewisandpartners_logo.jpeg'
+import microsoftLogo from './assets/SWLAC_logo.png'
+import pdpaola from './assets/pdpaola.png'
 
 import pythonLogo from './assets/pythonlogo.png'
 import spacyLogo from './assets/SpacyLogo.png'
@@ -18,10 +18,10 @@ import firebase from './assets/firebaeLogo.png'
 import flaskLogo from './assets/flask_logo.jpg'
 import gephiLogo from './assets/gephiLogo.jpg'
 import reactLogo from './assets/reactLogo.png'
+import NCSLogo from './assets/ncs_logo.png'
 
 
 
-import QueenMaryUniversityLogo from './assets/Queen-Mary-UniversityLogo.png'
 import ClimateSenseHomepagePhoneOne from './assets/ClimateSensePhone.png'
 //import ClimateSenseHomepageTablet from '../../assets/ClimateSenseHomepageTablet.jpg'
 //import ClimateSenseLoginScreen from '../../assets/ClimateSenseLoginScreen.jpg'
@@ -36,59 +36,48 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 const Main = () => {
     const Work_Experiences = [
         {
-            company: 'Reality AI Labs',
-            job_title: 'Software Developer',
-            description: ['Reduced system bugs by 4% through thorough testing and debugging for high-quality code.', 'Created AI-powered tools (Marvel AI, Sky AI) to enhance global education and career coaching accessibility by 5%.' ],
-            logo: reality_ai_labs_logo,
-            duration: 'Dec 2024 - Present'
+            company: 'PDPAOLA',
+            job_title: 'Style Advisor',
+            description: ['Pro-actively exceeded weekly sales targets through strategic upselling and cross selling products, leveraged in providing in- product knowledge to customers and recommending complementary items.', 
+                'Increased client engagement and loyalty through personalised follow – up, by crafting compelling and professional client emails asking about their purchases.',
+                'Analysed sales data to optimize customer experience through meticulously tracing and analysing key sales metrics such as net sales, items per order and customer transactions on an excel spreadsheet database, which provided actionable insight into store performance and customer purchasing trends.',],
+            logo: pdpaola,
+            duration: 'Dec 2024 - Jan 2025'
         },
 
         {
-            company: 'Grant Thornton',
-            job_title: 'Technology Risk Consultant',
-            description: ['Delivered end-to-end solutions, including software development and ERP integration, with cross-functional teams.', 'Implemented cloud adoption, cybersecurity, and data analytics solutions for clients.' ],
-            logo: GTLogo,
-            duration: 'Sep 2024 - Dec 2024'
-        },
-
-        {
-            company: 'Amazon',
-            job_title: 'Program Manager',
-            description: ['Enhanced the performance of the Amazon locker network, achieving an estimated 10% increase in efficiency and estimated revenue savings of over $100,000 annually.', 'Refined a Machine Learning Model, providing insights in regional differences in internal metrics, and package volume performance, with findings presented to senior management to further push projects.'],
-            logo: amazonLogo,
-            duration: 'Jan 2024 - Aug 2024'
-        },
-
-        {
-            company: 'Microsoft',
-            job_title: 'Technology Internship',
-            description: ['Engineered a feature-rich app demo using React Native Expo, which boosted prospective leadership interest by 18%.', 'Maintained extensive knowledge base in AI and software engineering by regularly attending workshops, webinars, and industry conferences.'],
-            logo: microsoftLogo,
-            duration: 'Jul 2023 - Aug 2023'
-        },
-
-        {
-            company: 'Grant Thornton',
-            job_title: 'Technology Risk Consultant Internship',
-            description: ['Enhanced client communication by providing clear and concise code review feedback, leading to a 10% increase in client satisfaction with our services.', 'Collaborated with cross-functional teams to identify and resolve control weaknesses, working closely with various departments to conduct thorough assessments and implement effective solutions. '],
-            logo: GTLogo,
-            duration: 'Jun 2023 - Jul 2023'
-        },
-
-        {
-            company: 'Queen Mary University London',
-            job_title: 'Teaching Assistant',
-            description: ['Developed and implemented engaging lesson plans that improved student performance in coursework 10%.', 'Used technology to supplement traditional teaching methods, resulting in a 5% increase in student engagement.'],
-            logo: QueenMaryUniversityLogo,
+            company: 'The Ordinary',
+            job_title: 'Sales Associate',
+            description: ['Enhanced product expertise through active participation in training programs, utilizing feedback to improve performance and contribute to a positive workplace culture.', 
+                'Educated product and brand knowledge with customers and maintained an active awareness of company brand campaigns, new commercial product launches and good knowledge of KPI’s to help drive sales targets and give expert advice in line with customers’ needs.' ],
+            logo: TheOrdinary_logo,
             duration: 'Oct 2023 - Dec 2023'
         },
 
         {
-            company: 'Queen Mary University London',
-            job_title: 'Student Ambassador',
-            description: ['Organised a campus tour program that provided prospective students with a comprehensive overview of the university and increased prospective student attendance by 6%.', 'Represented the university at various outreach events and recruitment drives, resulting in a 4% increase in applications from prospective students.'],
-            logo: QueenMaryUniversityLogo,
-            duration: 'Feb 2023 - Aug 2024'
+            company: 'John Lewis & Partners',
+            job_title: 'Operations Partner',
+            description: ['Assisted in upholding visual merchandising standards, maintaining stockroom appearance, and helping customers locate the products they need in an open and approachable manner.', 
+                'Assisted customers with styling and product selection, creating personalized outfits that accurately reflect the brand’s aesthetics and guidelines.', 'Leveraged a vast variety of company tools, incentives, and strategies to support meeting the store goals.'],
+            logo: JohnLewis_Logo,
+            duration: 'Oct 2021 - Jan 2022'
+        },
+
+        {
+            company: 'South Westminster aLegal Advice Centre (SWLAC)',
+            job_title: 'Administrative Assistant Intern',
+            description: ['Collaborated with legal professionals to provide timely and accurate legal advice to clients on a range legal of matters within 30-minute consultation sessions, including employment, consumer landlord/tenant and family law.', 
+                'Established and maintained detailed case files, summarizing critical information regarding court rulings.', 'Conducted comprehensive legal research into case law, statute and legislation to ensure clients are given well-informed advice.'],
+            duration: 'Jul 2023 - Aug 2023'
+        },
+
+        {
+            company: 'NCS National Citizen Service',
+            job_title: 'Team Associate',
+            description: ['Managed financial budget for advertisements and campaigns by implementing daily spending limits and assessing the impact of each purchase on the campaign, as a result, 15% of the overall budget was saved.', 
+                'Accelerated sales of tickets for fundraising by 10%, through extensive research into innovative and unique marketing and advertising strategies, which attracted intellectual investment from marketing experts.'],
+            logo: NCSLogo,
+            duration: 'Jul 2018 - Aug 2018'
         },
     ]
 
@@ -130,9 +119,9 @@ const Main = () => {
         <div className='container grid md:grid-cols-2 gap-11 mx-10 min-h-[500px] bg-white w-full'>
             <div className='flex flex-col justify-center text-center md:text-left pt-24 md:p-0 pb-5 bg-white w-full'>
                 <h4 className='text-xl font-light text-stone-900 mt-48' >Hi, I'm</h4>
-                <h1 className='text-6xl font-bold'> Dare Mensah </h1>
-                <h1 className='text-6xl font-bold text-stone-900'>Product Manager/ Software Developer</h1>
-                <p className='my-4'> A passionate and dedicated Computer Science graduate with First Class Honors from Queen Mary University of London. With hands-on experience in software development, data analytics, and cloud solutions, I specialize in leveraging technologies like React, Python, Firebase, and SQL to create impactful solutions. Currently, I am advancing my expertise as a Technology Consultant Associate at Grant Thornton, where I contribute to delivering cutting-edge technology solutions.
+                <h1 className='text-6xl font-bold'> Sarah Mensah </h1>
+                <h1 className='text-6xl font-bold text-stone-900'>Law Graduate</h1>
+                <p className='my-4'> Highly motivated Law graduate with valuable experience in customer-facing roles, demonstrating a unique blend of legal knowledge and exceptional client service skills. Proven ability to provide personalised advice and support, manage client interactions, and ensure efficient operations. Expertise in building client relationships, analyzing needs, and delivering solutions, complemented by skills in legal research and administrative tasks. 
                 </p>
                 <div class="flex flex-nowrap my-5 gap-4 justify-start">
                     <div>
@@ -143,16 +132,9 @@ const Main = () => {
                         </a>
                     </div>
                     <div>
-                        <a href="https://www.linkedin.com/in/dare-mensah-a78934226/">
+                        <a href="https://www.linkedin.com/in/contact-sarah-info/">
                             <button>
                                 <img className ='rounded-full src' src={linkinimg} height={42} width={42}/>
-                            </button>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/Dare-Mensah">
-                            <button>
-                                <img className ='rounded-full src' src={githubimg} height={42} width={42}/>
                             </button>
                         </a>
                     </div>
@@ -173,18 +155,18 @@ const Main = () => {
             <div className="flex flex-wrap justify-center gap-4">
                 <div className="border-2 rounded-md p-3 w-96 h-70">
                 <p className="text-center font-bold mb-3">Experience</p>
-                <p className="text-center">1+ years</p>
-                <p className="text-center mt-2">Software Development & Product Management</p>
+                <p className="text-center">2+ years</p>
+                <p className="text-center mt-2">Customer Service</p>
             </div>
             <div className="border-2 rounded-md p-3 w-96 h-70">
                 <p className="text-center font-bold mb-3">Education</p>
-                <p className="text-center">BSc Honours Computer Science: 1st Class</p>
-                <p className="text-center">A Level: Computer Science - A*, Politics - A, Philosophy - A</p>
+                <p className="text-center">LLM in Public International Law (High Merit, 69%)</p>
+                <p className="text-center">LLB Honours Bachelor of Laws</p>
             </div>
-            <div className="border-2 rounded-md p-3 w-96 h-70">
+            <div className="border-2 rounded-md p-3 w-97 h-70">
                 <p className="text-center font-bold mb-3">Skills</p>
-                <p className="text-center">Java, Python, React, SQL, APIs</p>
-                <p className="text-center">HTML, CSS, JavaScript, PySpark</p>
+                <p className="text-center">LexisNexis, Canva, Microsoft office Suite (Word, powerpoint, Excel, Access), West Law, Halsbury Laws</p>
+                <p className="text-center">Google analytics, Microsoft Outlook, Salesforce, Shopify analytics, GDPR basic Knowledge and AI Regulations</p>
             </div>
             
         </div>
@@ -192,30 +174,40 @@ const Main = () => {
     </section>
 
     <section id="work_experience" className="my-60">
-        <p className="text-stone-900 text-center">Explore my</p>
-        <h1 className="text-6xl font-bold text-center mb-10">Work Experience</h1>
-        <div className="container flex flex-col items-center justify-center gap-11 mx-auto bg-white w-full">
-            <div className="flex flex-wrap justify-center gap-3">
+    <p className="text-stone-900 text-center">Explore my</p>
+    <h1 className="text-6xl font-bold text-center mb-10">Work Experience</h1>
+    <div className="container flex flex-col items-center justify-center gap-11 mx-auto bg-white w-full">
+        <div className="flex flex-wrap justify-center gap-3">
             {Work_Experiences.map((Work_Experiences, index) => (
-                <div className="border-2 rounded-3xl p-3 w-96 h-70">
+                <div key={index} className="border-2 rounded-3xl p-3 w-96 h-70">
                     <p className="text-center font-bold mb-3">{Work_Experiences.job_title}</p>
-                    <div className='flex space-x-3 grid-rows-2  justify-center'>
-                        <img src={Work_Experiences.logo} height={40} width={40}/>
-                        <p className="text-center mt-2">{Work_Experiences.company}</p>
+
+                    <div className='flex space-x-3 grid-rows-2 justify-center items-center'>
+                        {/* Logo and Company Name if the company image is not avaible then it only showes the name of the company*/}
+                        {Work_Experiences.logo ? (
+                            <>
+                                <img src={Work_Experiences.logo} height={40} width={40} alt={`${Work_Experiences.company} logo`} />
+                                <p className="text-center mt-2">{Work_Experiences.company}</p>
+                            </>
+                        ) : (
+                            <p className="text-center mt-2">{Work_Experiences.company}</p>
+                        )}
                     </div>
-                        <p className='text-center font-thin mt-3 text-neutral-800 antialiased'>{Work_Experiences.duration}</p>
+
+                    <p className='text-center font-thin mt-3 text-neutral-800 antialiased'>{Work_Experiences.duration}</p>
+
                     <div>
-                    {Work_Experiences.description.map((text, textIndex) => (
-                        <div key={textIndex}>
-                            <ol className=' list-disc pl-5'>
-                                <li className='mt-4'>{text}</li>
-                            </ol>
-                        </div>
-                    ))}
+                        {Work_Experiences.description.map((text, textIndex) => (
+                            <div key={textIndex}>
+                                <ol className='list-disc pl-5'>
+                                    <li className='mt-4'>{text}</li>
+                                </ol>
+                            </div>
+                        ))}
                     </div>
                 </div>
             ))}
-        </div>
+            </div>
         </div>
     </section>
 
