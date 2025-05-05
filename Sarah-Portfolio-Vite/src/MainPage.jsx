@@ -125,7 +125,7 @@ const Main = () => {
                 </p>
                 <div class="flex flex-nowrap my-5 gap-4 justify-start">
                     <div>
-                        <a href="https://drive.google.com/uc?export=download&id=1VS2lJSuqRcQFO7LDeIljtOf8jCjygMTz">
+                        <a href="https://drive.google.com/uc?export=download&id=1Lk6iJW4SvDCwhLXk8D7KoDzkz0WjwCRc">
                             <button className='bg-stone-600 hover:bg-stone-800 text-white font-bold py-2 px-4 rounded-full'>
                                 <p>Downlaod CV</p>
                             </button>
@@ -210,54 +210,6 @@ const Main = () => {
             </div>
         </div>
     </section>
-
-    <section id="projects" className="my-60">
-    <p className="text-stone-900 text-center">Browse My Recent</p>
-    <h1 className="text-6xl font-bold text-center mb-10">Projects</h1>
-    <div className="container flex flex-col items-center justify-center gap-11 mx-auto bg-white w-full">
-        <Carousel swipeable={true} showIndicators={true} showThumbs={false} showArrows={true}>
-            {Projects.map((Projects, index) => (
-                <div key={index} className="container grid md:grid-cols-2 bg-white w-full gap-6">
-                    {/* Column for Image */}
-                    <div className="flex justify-center items-center">
-                        <img
-                            className="rounded-3xl"
-                            src={Projects.image}
-                            height={200}
-                            width={200}
-                            alt={`${Projects.Title} image`}
-                        />
-                    </div>
-
-                    {/* Column for Text */}
-                    <div className="flex flex-col justify-center">
-                        <h2 className="text-3xl font-bold my-4 text-center">{Projects.Title}</h2>
-                        <p className='text-start'>{Projects.description}</p>
-                        <div>
-                        {Projects.decription_list.map((text, textIndex) => (
-                            <div key={textIndex}>
-                                <ol className=' list-disc pl-5'>
-                                    <li className='mt-4 text-start'>{text}</li>
-                                </ol>
-                            </div>
-                        ))}
-                    </div>
-                    <div className='flex flex-nowrap my-5 gap-4 justify-center'>
-                    {Projects.technologiesLogo.map((image, imgIndex) => (
-                            <div key={imgIndex} className='flex flex-nowrap my-5 gap-4 justify-center'>
-                                <img className='rounded-md' src={image} height={15} width={15}/>
-                            </div>
-                        ))}
-
-                    </div>
-                    </div>
-                </div>
-            ))}
-        </Carousel>
-    </div>
-</section>
-
-
     </div>
     
 
